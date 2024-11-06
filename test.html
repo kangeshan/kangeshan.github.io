@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Knowledge</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0;">
+
+    <header style="background-color: #f57842; padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: #ffffff;">Mother's Knowledge</h1>
+        
+        <nav>
+            <ul style="list-style-type: none;">
+                <li style="display: inline; margin-right: 20px;"><a href="#" style="text-decoration: none; color: #ffffff;">Home</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#" style="text-decoration: none; color: #ffffff;">About</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#" style="text-decoration: none; color: #ffffff;">Services</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#" style="text-decoration: none; color: #ffffff;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <style>
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 80%;
+          background-color: #f57842;
+        }
+
+        .custom-color {
+            color:#ffffff;
+        }
+
+        .full-screen-container {
+          width: 100%;
+          height: 80%;
+          background-image: url('images/main.jpeg');
+          background-size: cover;
+          background-position: center;
+        }
+
+        /* Container styles */
+        .container {
+            width: 350px;
+            height: 200px;
+            background-color: #f57842;
+            transition: background-color 0.3s; /* Add smooth transition for background color change */
+        }
+
+        /* Change background color on hover */
+        .container:hover {
+            background-color: hsl(18, 6%, 39%);
+        }
+    </style>
+
+
+    <div class="full-screen-container"></div>
+
+    <main style="padding: 20px;">
+
+        <section class="hero" style="text-align: center; margin-bottom: 40px;">
+            <h2 style="color: #ffffff; margin-bottom: 10px;">Welcome to Mother's Knowledge</h2>
+            
+            <p><div class="custom-color" style="color:#ffffff;">Providing top-notch care for your little ones.</div></p>
+            <a href="#" class="btn" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #ffffff; text-decoration: none; border-radius: 5px;">Learn More</a>
+        </section>
+
+        <section class="services" style="display: flex; justify-content: space-between;">
+            <div class="service" style="flex: 1; background-color: #007bff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-right: 10px;">
+                <img src="images/Edu.jpg" alt="Education" style="width: 50px; height: 50px; margin-bottom: 10px;">
+                <div class="container">
+                    <h3>Education</h3>
+                    <p>Donate for future leaders.</p>
+                </div>
+            </div>
+            <div class="service" style="flex: 1; background-color: #ffffff;  padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-right: 10px;">
+                <img src="images/pro.jpg" alt="Feeding Icon" style="width: 50px; height: 50px; margin-bottom: 10px;">
+                <div class="container">
+                    <h3>Test</h3>
+                    <p>Nourishing your children with care.</p>
+                </div>
+            </div>
+            <div class="service" style="flex: 1; background-color: #038c61; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <img src="images/support.jpg" alt="Playtime Icon" style="width: 50px; height: 50px; margin-bottom: 10px;">
+                <div class="container">
+                    <h3>Playtime</h3>
+                    <p>Engaging activities for your children's development.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="background-color: #333; color: #ffffff; text-align: center; padding: 10px 0;">
+        <p>&copy; 2024 Mothers Knowledge. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

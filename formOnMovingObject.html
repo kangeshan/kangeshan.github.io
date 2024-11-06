@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form on Moving Object</title>
+<style>
+  /* Container styles */
+  .container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #830404;
+    animation: move 5s infinite; /* Animation name, duration, and iteration count */
+  }
+    
+
+
+  /* Keyframes for animation */
+  @keyframes move {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 50%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  /* Form styles */
+  form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input[type="text"], [type="name"] input[type="email"], input[type="number"] button {
+    display: block;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+    <div id="movingObject"></div>
+
+    <script>
+        // Get the moving object element
+        var movingObject = document.getElementById("movingObject");
+    
+        // Set initial position and speed of the object
+        var position = 0;
+        var speed = 2; // Adjust speed as needed
+    
+        // Function to move the object
+        function moveObject() {
+            position += speed;
+            movingObject.style.left = position + "px";
+    
+            // Check condition to stop the object
+            if (conditionToStop()) {
+                clearInterval(interval); // Stop the movement
+            }
+        }
+    
+        // Function to define condition to stop the object
+        function conditionToStop() {
+            // Example: Stop when the object reaches a certain position
+            return position >= 300; // Adjust position as needed
+        }
+    
+        // Start moving the object at regular intervals
+        var interval = setInterval(moveObject, 10); // Adjust interval as needed
+    </script>
+<div class="container">
+  <form>
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <input type="number" name="phone" placeholder="phone">
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

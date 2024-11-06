@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop Moving Object</title>
+<style>
+    #movingObject {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+
+<div id="movingObject"></div>
+
+<script>
+    // Get the moving object element
+    var movingObject = document.getElementById("movingObject");
+
+    // Set initial position and speed of the object
+    var position = 0;
+    var speed = 2; // Adjust speed as needed
+
+    // Function to move the object
+    function moveObject() {
+        position += speed;
+        movingObject.style.left = position + "px";
+
+        // Check condition to stop the object
+        if (conditionToStop()) {
+            clearInterval(interval); // Stop the movement
+        }
+    }
+
+    // Function to define condition to stop the object
+    function conditionToStop() {
+        // Example: Stop when the object reaches a certain position
+        return position >= 300; // Adjust position as needed
+    }
+
+    // Start moving the object at regular intervals
+    var interval = setInterval(moveObject, 10); // Adjust interval as needed
+</script>
+
+</body>
+</html>
