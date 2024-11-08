@@ -1,113 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">
-    <title>Mother's Knowledge</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <title>48th Highlander</title>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f0f0f0;">
-
-
-    <header style="background-color: #038c61; padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-        <center><h1 style="color: #ffffff;">Mother's Knowledge</h1></center>
+<body id="top">
+    <nav>
+    
+        <a href="#about" alt="about">about</a>
+        <a href="#skills" alt="skills">skills</a>
+        <img src="assets/images/logo.png">
+        <a href="#portfolio" alt="portfolio">portfolio</a>
+        <a href="#contact" alt="contact">contact</a>
         
-        <nav>
-            <ul style="list-style-type: none;">
-                <li style="display: inline; margin-right: 20px;"><a href="index.html" style="text-decoration: none; color: #ffffff;">Home</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="about.html" style="text-decoration: none; color: #ffffff;">About</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="#" style="text-decoration: none; color: #ffffff;">Services</a></li>
-                <li style="display: inline; margin-right: 20px;"><a href="contact.html" style="text-decoration: none; color: #ffffff;">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-        <style>
-            body, html {
-              margin: 0;
-              padding: 0;
-              height: 80%;
-              background-color: #038c61;
-              
-            }
+      </nav>
 
-            .custom-color {
-                color:#ffffff;
-            }
-            .full-screen-container {
-              width: 100%;
-              height: 80%;
-              background-image: url('images/b80c6f8c-5aaa-45e9-9cc3-82a7c22a3668.jpg');
-              background-size: cover;
-              background-position: center;
-              
-              /* Additional styles as needed */
+  <div id="toTop">
+    <a href="#top" title="to top">to top</a>
+  </div>
 
-            
+  
+  
+  <header>
+    <div id="socialIcons">
+      <a href="https://www.dragonbitstudio.com" target="_blank"><img src="assets/images/dragonbit-64.png" alt="dragonbit studio" class="socialIcon"></a>
+      <a href="https://www.dragonbitstudio.com" target="_blank"><img src="assets/images/codepen-64.png" alt="codepen" class="socialIcon"></a>
+      <a href="https://www.dragonbitstudio.com" target="_blank"><img src="assets/images/twitter-64.png" alt="twitter" class="socialIcon"></a>
+      <a href="https://www.dragonbitstudio.com" target="_blank"><img src="assets/images/linkedin-64.png" alt="link me out" class="socialIcon"></a>
+    </div>
+  </header>
+  <section id="about" title="about">
+    <div class="splitDiv">
+      <h1>About Me:</h1><br><br>
+      <p>Highly skilled and results-driven AWS Cloud & DevOps Engineer with 2+ years of experience seeking a challenging position to utilize my expertise in designing, implementing, and managing scalable cloud infrastructure solutions. Proven track record of optimizing system performance, ensuring high availability, and driving cost efficiency. Strong ability to collaborate with cross-functional teams to deliver innovative solutions.</p><br><br>
+     
+      <img id="bioPic" src="../assets/images/me.png" alt="look it's me">
 
-            }
+      <p>2+ years of IT experience with extensive knowledge of AWS Cloud & DevOps and expertise in designing, deploying, and managing cloud-based infrastructure solutions.
+        • Strong understanding of AWS services, including EC2, S3, VPC, RDS, Lambda, CloudFormation, and others.
+        • Deep knowledge of DevOps methodologies, CI/CD pipelines, and associated tools like Jenkins, Git, and Docker.
+        • Experience in designing highly available, fault-tolerant, and scalable architectures on AWS.
+        • Proven ability to automate infrastructure deployments and optimize system performance using infrastructure-as-code (IaC) principles.
+        • Strong troubleshooting and problem-solving skills, with a keen eye for identifying and resolving system bottlenecks and performance issues.
+        • Proficient in building and maintaining highly available and scalable infrastructures using AWS services such as EC2, S3, RDS, and Lambda
+        • Demonstrated expertise in containerization technologies like Docker and orchestration tools like Kubernetes for container management
+        • Deep knowledge of monitoring and logging tools such as AWS CloudWatch and ELK stack
+        • Proven ability to automate infrastructure provisioning and configuration using tools like Ansible and Puppet.
+        • Strong troubleshooting and problem-solving skills with the ability to quickly identify and resolve issues.
+        • Excellent collaboration and communication skills with a track record of working effectively in cross-functional teams.</p>
+      <img id="bioPic" src="../assets/images/me.png" alt="look it's me">
+    </div>
+    <div class="splitDiv">
+      <img src="assets/images/pic1.png" class="smlPic" alt="pic 1">
+      <img src="assets/images/pic2.png" class="smlPic" alt="pic 2"><br><br><br><br><br>
+      <img src="assets/images/pic3.png" class="smlPic" alt="pic 3">
+      <img src="assets/images/pic4.png" class="smlPic" alt="pic 4">
+      <img src="assets/images/pic5.png" class="smlPic" alt="pic 4">
+    </div>
+  </section>
+  <section id="skills" title="skills"></section>
+  <section id="portfolio" title="portfolio"></section>
+  <section id="contact" title="contact">
+    <fieldset>
+      <legend>A friendly contact form</legend>
+      <form id="contactForm" action="contact.php" method="post">
+        <input type="text" id="name" name="name" placeholder="your name" required>
+        <br>
+        <input type="email" id="email" name="email" placeholder="your email: e.g. name@place.ca" required>
+        <br>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <br>
+        <input type="tel" id="phone" name="phone" placeholder="your phone: e.g. (1)555-555-5678" required>
+        <br>
+        <input type="submit" value="Send me money">
+      </form>
+      </fieldset>
+  </section>
+  <footer>
+    <p>&copy; 2024, S.M.Kangeshan </p>
+  </footer>
 
-                     
-             /* Container styles */
-              .container {
-                 width: 200px;
-                  height: 200px;
-                 background-color: #038c61;
-                     transition: background-color 0.3s; /* Add smooth transition for background color change */
-            }
-
-                /* Change background color on hover */
-            .container:hover {
-                 background-color: #038c61;
-             }
-                </style>
-
-          
-   <div class="full-screen-container"></div>
-
-    
-    
-
-    <main style="padding: 20px;">
-
-        <section class="hero" style="text-align: center; margin-bottom: 40px;">
-            <h2 style="color: #ffffff; margin-bottom: 10px;">Welcome to Mother's Knowledge</h2>
-            
-            <p><div class="custom-color: #ffffff">Providing top-notch care for your little ones.</p></div>
-            <a href="about.html" class="btn" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #ffffff; text-decoration: none; border-radius: 5px;">Learn More</a>
-        </section>
-
-        <section class="services" style="display: flex; justify-content: space-between;">
-            <div class="service" style="flex: 1; background-color: #007bff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-right: 10px;">
-                <img src="images/Edu.jpg" alt="Education" style="width: 50px; height: 50px; margin-bottom: 10px;">
-                
-               <div class=".container:hover" backgrund-color="#038c61"></div>
-                
-                <h3 font-color: #ffffff;>1.	Mothers Knowledge Cupboard </h3>
-
-                <p>-	Set up donation’s boxes across educational institutions and temples to collect donations of school materials (pens, pencils, books, textbooks) and electronic devices. </p>
-            </div>
-            <div class="service" style="flex: 1; background-color: #ffffff;  padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-right: 10px;">
-                <img src="images/pro.jpg" alt="Feeding Icon" style="width: 50px; height: 50px; margin-bottom: 10px;">
-                <h3>Mothers Knowledge Caring University</h3>
-                <p>-	Work alongside Sri Lakan universities to provide students who need support with the required books and devices needed to excel in their studies. 
-                    -	Textbooks
-                    -	Electronic Devices
-                    </p>
-            </div>
-            <div class="service" style="flex: 1; background-color: #333333; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px hsla(0, 53%, 58%, 0.102);">
-                <img src="images/support.jpg" alt="Playtime Icon" style="width: 50px; height: 50px; margin-bottom: 10px;">
-                <h3>Mothers Knowledge Mobile Truck Donations</h3>
-                <p>-	Once donations cupboards are filled, the donations will be distributed to institutions in the north and north east regions and in Colombo. <br>
-                    -	Take donated items and distribute to listed institutions. 
-                    </p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer style="background-color: #333; color: #ffffff; text-align: center; padding: 10px 0;">
-        <p>&copy; 2024 Mothers Knowladge. All rights reserved.</p>
-    </footer>
-
+  <script src="scripts/app.js"></script>
 </body>
 </html>
